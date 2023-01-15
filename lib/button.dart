@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Color color = Colors.deepPurple;
+Color color = Colors.green;
 
 Widget buttonSection = Row(
   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
