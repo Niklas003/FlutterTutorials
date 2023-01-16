@@ -23,7 +23,7 @@ Widget titleSection = Container(
             Text(
               'Kandersteg, Switzerland',
               style: TextStyle(
-                color: Colors.grey[500],
+                color: Colors.grey[700],
               ),
             ),
           ],
