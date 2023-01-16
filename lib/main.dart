@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'title.dart';
 import 'button.dart';
+import 'cardWidget.dart';
 
 void main() => runApp(const MyApp());
 
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
             titleSection,
             buttonSection,
             textSection,
+            cardSection
           ],
         ),
       ),
