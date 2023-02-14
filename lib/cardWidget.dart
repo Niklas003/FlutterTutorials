@@ -6,15 +6,18 @@ Widget cardSection = Card(
   elevation: 5.5,
   child: Column(
     children: const [
-      ListTile(
-        leading: Icon(
-          Icons.warning_amber_outlined,
-          color: Colors.red,
+      Padding(
+        padding: EdgeInsets.all(3.0),
+        child: ListTile(
+          leading: Icon(
+            Icons.warning_amber_outlined,
+            color: Colors.red,
+          ),
+          title: Text('Warnung!'),
+          subtitle: Text(
+              'Aufgrund von Unwetter kommt es zurzeit zu Verspätungen und Ausfällen'),
+          textColor: primaryBlue,
         ),
-        title: Text('Warnung!'),
-        subtitle: Text(
-            'Aufgrund von Unwetter kommt es zurzeit zu Verspätungen und Ausfällen'),
-        textColor: primaryBlue,
       ),
     ],
   ),

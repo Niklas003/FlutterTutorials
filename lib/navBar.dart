@@ -16,8 +16,8 @@ Widget bottomBar = BottomNavigationBar(
       label: 'Deine Tickets',
     ),
     BottomNavigationBarItem(
-      icon: Icon(Icons.sell_outlined),
-      label: 'Angebote',
+      icon: Icon(Icons.travel_explore_outlined),
+      label: 'Ziele',
     ),
   ],
 );
