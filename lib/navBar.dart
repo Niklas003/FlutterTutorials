@@ -1,13 +1,11 @@
-import 'package:first_flutter/cardWidget.dart';
-import 'package:first_flutter/main.dart';
+// ignore: file_names
 import 'package:flutter/material.dart';
-import 'cardWidget.dart';
 
-Widget navBar = BottomNavigationBar(
-  elevation: 8,
+Widget bottomBar = BottomNavigationBar(
+  elevation: 16,
   selectedItemColor: Colors.white,
   unselectedItemColor: Colors.white38,
-  backgroundColor: Color.fromARGB(255, 5, 22, 77),
+  backgroundColor: const Color.fromARGB(255, 5, 22, 77),
   items: const <BottomNavigationBarItem>[
     BottomNavigationBarItem(
         icon: Icon(Icons.home_outlined),

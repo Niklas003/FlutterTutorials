@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'title.dart';
 import 'button.dart';
 import 'cardWidget.dart';
-import 'navBar.dart';
 
 void main() => runApp(const MyApp());
 const Color primaryBlue = Color.fromARGB(255, 5, 22, 77);
@@ -36,19 +35,35 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            Image.asset(
-              'images/KISS_200.png',
-              width: 600,
-              height: 200,
-              fit: BoxFit.cover,
-            ),
+            Stack(children: <Widget>[
+              Image.asset(
+                'images/KISS_200.png',
+                width: 600,
+                height: 175,
+                fit: BoxFit.cover,
+                opacity: const AlwaysStoppedAnimation(0.35),
+              ),
+              // ignore: prefer_const_constructors
+              Center(
+                // ignore: prefer_const_constructors
+                child: Text(
+                  "Willkommen!",
+                  style: const TextStyle(
+                      height: 3.5,
+                      letterSpacing: 4,
+                      color: Color.fromARGB(194, 5, 22, 77),
+                      fontSize: 40,
+                      fontWeight: FontWeight.w800),
+                ),
+              ),
+            ]),
             cardSection,
             titleSection,
             buttonSection,
             textSection,
-            navBar
           ],
         ),
+        bottomNavigationBar: bottomBar,
       ),
     );
   }
