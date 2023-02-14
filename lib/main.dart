@@ -1,9 +1,13 @@
+import 'package:first_flutter/navBar.dart';
 import 'package:flutter/material.dart';
 import 'title.dart';
 import 'button.dart';
 import 'cardWidget.dart';
+import 'navBar.dart';
 
 void main() => runApp(const MyApp());
+const Color primaryBlue = Color.fromARGB(255, 5, 22, 77);
+const Color background = Color.fromARGB(255, 219, 219, 219);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,26 +23,30 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       theme: ThemeData(
-          primarySwatch: Colors.green,
-          scaffoldBackgroundColor: Colors.blueGrey[50]),
+          primarySwatch: Colors.indigo, scaffoldBackgroundColor: background),
       darkTheme: ThemeData.dark(),
       title: 'Discover',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Discover'),
+          backgroundColor: primaryBlue,
+          title: Image.asset(
+            'images/eagle.png',
+            scale: 7,
+          ),
         ),
         body: ListView(
           children: [
             Image.asset(
-              'images/lake.jpg',
+              'images/KISS_200.png',
               width: 600,
               height: 200,
               fit: BoxFit.cover,
             ),
+            cardSection,
             titleSection,
             buttonSection,
             textSection,
-            cardSection
+            navBar
           ],
         ),
       ),

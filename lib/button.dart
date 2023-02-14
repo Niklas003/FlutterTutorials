@@ -1,13 +1,12 @@
+import 'package:first_flutter/main.dart';
 import 'package:flutter/material.dart';
-
-Color color = Colors.green;
 
 Widget buttonSection = Row(
   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
   children: [
-    _buildButtonColumn(color, Icons.call_rounded, 'CALL'),
-    _buildButtonColumn(color, Icons.near_me_rounded, 'ROUTE'),
-    _buildButtonColumn(color, Icons.share_rounded, 'SHARE'),
+    _buildButtonColumn(primaryBlue, Icons.call_rounded, 'CALL'),
+    _buildButtonColumn(primaryBlue, Icons.near_me_rounded, 'ROUTE'),
+    _buildButtonColumn(primaryBlue, Icons.share_rounded, 'SHARE'),
   ],
 );
 
@@ -16,7 +15,7 @@ Column _buildButtonColumn(Color color, IconData icon, String label) {
     mainAxisSize: MainAxisSize.min,
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      Icon(icon, color: color),
+      Icon(icon, color: primaryBlue),
       Container(
         margin: const EdgeInsets.only(top: 8),
         child: Text(

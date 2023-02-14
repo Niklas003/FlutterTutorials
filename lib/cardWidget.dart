@@ -1,15 +1,21 @@
+import 'package:first_flutter/main.dart';
 import 'package:flutter/material.dart';
 
 Widget cardSection = Card(
-  margin: EdgeInsets.all(10),
+  margin: const EdgeInsets.all(10),
   elevation: 5.5,
   child: Column(
     children: const [
       ListTile(
-        title: Text('Title'),
-        subtitle: Text('The enourmes important subtitle'),
-        textColor: Colors.green,
-      )
+        leading: Icon(
+          Icons.warning_amber_outlined,
+          color: Colors.red,
+        ),
+        title: Text('Warnung!'),
+        subtitle: Text(
+            'Aufgrund von Unwetter kommt es zurzeit zu Verspätungen und Ausfällen'),
+        textColor: primaryBlue,
+      ),
     ],
   ),
 );
